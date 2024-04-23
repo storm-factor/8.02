@@ -1,39 +1,24 @@
-# «Система мониторинга Zabbix» - Pirogov Anton
+# «Система мониторинга Zabbix-2» - Pirogov Anton
 
 ###	Задание 1 
 
-![adm](./files/adm.png)
+![ex1-1](./files/ex1(1).png)
+![ex1-2](./files/ex1(2).png)
 
-```
+###     Задание 2-3
 
-apt install postgres
-wget https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_6.0-5+debian12_all.deb
-dpkg -i zabbix-release_6.0-5+debian12_all.deb
-apt update
-apt install zabbix-server-pgsql zabbix-frontend-php php8.2-pgsql zabbix-apache-conf zabbix-sql-scripts zabbix-agent
-sudo -u postgres createuser --pwprompt zabbix
-sudo -u postgres createdb -O zabbix zabbix
-zcat /usr/share/zabbix-sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix
-DBPassword="password"
-systemctl restart zabbix-server zabbix-agent apache2
-systemctl enable zabbix-server zabbix-agent apache2
+![ex2-3](./files/ex2-3.png)
 
+###     Задание 4
 
-```
+![ex4](./files/ex4.png)
 
-###	Задание 2
+###     Задание 5
 
-![confh](./files/confh.png)
-![aglog](./files/aglog.png)
-![monlat](./files/monlat.png)
+![ex5-1](./files/ex5(1).png)
+![ex5-2](./files/ex5(2).png)
+![ex5-3](./files/ex5(3).png)
 
-```
+###     Задание 6
 
-wget https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_6.0-5+debian12_all.deb
-dpkg -i zabbix-release_6.0-5+debian12_all.deb
-apt update
-apt install zabbix-agent
-systemctl restart zabbix-agent
-systemctl enable zabbix-agent
-
-```
+![ex6](./files/ex6.png)
